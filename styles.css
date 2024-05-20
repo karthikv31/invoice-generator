@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#invoice-output {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#invoice-output h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#invoice-output table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#invoice-output table th,
+#invoice-output table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#invoice-output table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+#invoice-output .total {
+    font-weight: bold;
+    text-align: right;
+    background-color: #f5f5f5;
+}
+
+#invoice-output .footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+}

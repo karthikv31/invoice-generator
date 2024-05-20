@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake@latest/build/pdfmake.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake@latest/build/vfs_fonts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html-to-pdfmake/browser.js"></script>
+</head>
+<body>
+    <h1>Invoice Generator</h1>
+    <form id="invoice-form">
+        <label for="invoice-number">Invoice Number</label>
+        <input type="text" id="invoice-number" placeholder="Invoice Number" required readonly>
+
+        <label for="customer-name">Customer Name</label>
+        <input type="text" id="customer-name" placeholder="Customer Name" required>
+        
+        <label for="customer-address">Customer Address</label>
+        <input type="text" id="customer-address" placeholder="Customer Address" required>
+        
+        <label for="item-name">Item Name</label>
+        <select id="item-name" required>
+            <option value="ONION SAMOSA">ONION SAMOSA</option>
+            <option value="CORN SAMOSA">CORN SAMOSA</option>
+            <option value="VEG KHEEMA SAMOSA">VEG KHEEMA SAMOSA</option>
+            <option value="PANEER SAMOSA">PANEER SAMOSA</option>
+        </select>
+        
+        <label for="item-quantity">Quantity</label>
+        <input type="number" id="item-quantity" placeholder="Quantity" required>
+        
+        <label for="item-price">Price per Item</label>
+        <input type="number" step="0.01" id="item-price" placeholder="Price per Item" required>
+        
+        <button type="button" id="add-item-button">Add Item</button>
+        <button type="button" id="generate-invoice-button">Generate Invoice</button>
+        <button type="button" id="download-pdf-button">Download PDF</button>
+    </form>
+    
+    <div id="invoice-output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
